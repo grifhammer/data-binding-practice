@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Binding</title>
+</head>
+<body>
+Name: <input id='textInput' type='text'>
+Hello <span id='nameSpan'></span>
+
+<script type="text/javascript">
+	var textInputElement = document.getElementById('textInput')
+	var nameSpanElement = document.getElementById('nameSpan');
+	textInputElement.addEventListener('keyup', function(){
+		var text = textInputElement.value;
+		nameSpanElement.innerHTML = text;
+	});
+</script>
+</body>
+</html>

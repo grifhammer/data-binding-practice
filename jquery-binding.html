@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Binding</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+Name: <input id='textInput' type='text'>
+Hello <span id='nameSpan'></span>
+<script type="text/javascript">
+	$('#textInput').on('keyup', function(){
+		$('#nameSpan').html($('#textInput').val());
+	});
+</script>
+</body>
+</html>
